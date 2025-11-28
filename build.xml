@@ -22,6 +22,7 @@
         </checkstyle>
     </target>
     <target name="junit" depends="compile">
+		<mkdir dir="reports/junit" />
         <junit printsummary="yes" haltonfailure="yes">
               <classpath>
                 <pathelement location="build/classes"/>
